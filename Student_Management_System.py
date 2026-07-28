@@ -7,9 +7,9 @@ from PIL import Image, ImageTk
 
 conn = mysql.connector.connect(
     host = "localhost",
-    user = "root",
-    password =  "password123$",#input("Enter MySQL Password: "),
-    database = "student_management"
+    user = input("Enter your user database username"),
+    password =  input("Enter MySQL Password: "),
+    database = input("Enter your database Name: ")
 )
 cursor = conn.cursor()
 print("Connected Successfully!")
